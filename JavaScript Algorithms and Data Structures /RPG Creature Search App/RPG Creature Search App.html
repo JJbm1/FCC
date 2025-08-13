@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RPG Creature Search App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" />
+
+    <h1>RPG Creature Search App</h1>
+
+    <div class="search-section">
+      <label for="search-input"><strong>Search for Creature by Name or ID:</strong></label>
+      <input type="text" id="search-input" required />
+      <button id="search-button">Search</button>
+    </div>
+
+    <div id="loading">Loading...</div>
+
+    <div id="APIResults">
+      <div id="first-results">
+        <p id="creature-name"></p>
+        <p id="creature-id"></p>
+        <p id="weight"></p>
+        <p id="height"></p>
+
+        <ul id="types"></ul>
+
+        <p><strong>Special:</strong> <span id="special-name"></span> - <span id="special-description"></span></p>
+
+        <h3>Base Stats</h3>
+        <p><strong>HP:</strong> <span id="hp"></span></p>
+        <p><strong>Attack:</strong> <span id="attack"></span></p>
+        <p><strong>Defense:</strong> <span id="defense"></span></p>
+        <p><strong>Special Attack:</strong> <span id="special-attack"></span></p>
+        <p><strong>Special Defense:</strong> <span id="special-defense"></span></p>
+        <p><strong>Speed:</strong> <span id="speed"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
